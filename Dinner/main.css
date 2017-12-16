@@ -1,0 +1,82 @@
+*
+ {
+	box-sizing: border-box;
+    transition: all .1s ease-in-out;
+
+}
+body{
+    background-color: #3b3f45;
+    border: #ffffff;
+    border-width:15px;
+    border-style:solid;
+    padding: 0;
+    margin: 0;
+    font-family: “Trebuchet MS”, Trebuchet, Arial, sans-serif;
+}
+header{
+   background-color:  #4a4f56;
+   text-align: center;
+   padding: 15px;
+   font-size: 18px;
+   color: #eb7e7f;
+   line-height:1px; /*межстрочный интервал*/
+}
+.title {
+font-size: 30px;
+font-weight:bold;
+}
+.content{
+    width: 60%;
+    margin: 30px auto;
+	color: #dedede;
+}
+.little{
+    font-size: 12px;
+}
+.container {
+    background-color: #88839e;
+	padding: 20px;
+	font-size: 20px;
+	border: 2px solid transparent;
+}
+.container:nth-of-type(2n) {
+    background-color:#7a7593;
+}
+.container:hover {
+	border-top: 3px solid #dedede;
+	border-bottom: 3px solid #dedede;
+	background-color: #625e77;
+}
+.checkbox-1 {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+input[type=checkbox]{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+	margin-right: 10px;
+}
+
+input:checked ~ span {
+    text-decoration: line-through;
+    color:#a6acc0;
+}
+.button {
+    cursor: pointer;
+    background-color:#4a4f56;
+    color:#eb7e7f;
+    border:none;
+    font-size: 25px;
+    padding:15px;
+    margin-top: 30px;
+    width: 100%;
+}
+.button:active{
+    border:none;
+    background-color: #4a4f56;
+    color: rgb(145, 61, 194); 
+    outline: none;
+}
