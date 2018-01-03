@@ -436,7 +436,6 @@ margin: 30px;
   background-color: #0976b4;
   z-index: 5;
   color: #fff;
-  transition: all .3s ease-in;
 }
 
 .linkedin:before {
