@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('./../fonts/Proxima Nova Regular.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Futura PT Heavy';
+    src: url('./../fonts/FuturaPTHeavy.woff') format('woff');
+    font-weight: bold;
+    font-size: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
