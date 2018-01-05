@@ -3,6 +3,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+// @TODO: соблюдай одинаковые отступы везде, не пропускай отступы перед фигурными скобками, а так все ОК, МОЛОДЕЦ!
+
 .wrapper__container {
   min-width: 100vh;
   border:none;
@@ -18,6 +20,7 @@ body {
   line-height: 2;
 }
 
+// @TODO: не совсем корректное применение text в качестве можификатора, посмотрим еще раз про БЭМ
 .wrapper__container--text {
   font-size: 18px;
   margin-bottom: 40px;

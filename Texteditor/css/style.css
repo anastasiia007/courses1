@@ -106,6 +106,7 @@ body {
     font-size: 26px;
     line-height: 1.5;
     text-align: justify;
+    // @TODO: не использовать отрицательные отступы
     margin-right: -70px;
     padding-bottom: 20px;
 }

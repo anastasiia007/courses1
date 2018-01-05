@@ -1,9 +1,12 @@
 *,
 *:before,
 *:after {
+    // @TODO: transition ????
     transition: all .1s ease-in;
     box-sizing: border-box;  
 }
+
+// @TODO: отступы ??
 body {
 background-color: #3399cc;
 color: rgb(255, 238, 218);
@@ -23,7 +26,7 @@ font-size: 25px;
     
 }
 .container-border {
-    border: 3px solid #ffff; 
+    border: 3px solid #fff; 
 }
 .item{
     opacity: 0.7;
@@ -32,7 +35,9 @@ font-size: 25px;
      opacity: 1;
  }
 
+// @TODO: зачем такая специфичность, можно было разделить все на несколько видов классов по размеру, по цету и общий
 .item.one-half.blue {
+    // @TODO: #fff (три буквы f, а не 4ре и не 5-6..))
     border: 2px solid #ffff;
     display: inline-block;
     background-color: #3399cc;
@@ -131,6 +136,7 @@ font-size: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    // @TODO: отрицательные отступы??
     margin-left: -30px;
     margin-right: 30px;  
 }
