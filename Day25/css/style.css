@@ -5,20 +5,20 @@ body {
 
 .wrapper__container {
   min-width: 100vh;
-  border:none;
+  border: none;
   box-shadow: 0 0 50px #afaeae;
   margin: 100px 80px;
-  padding:120px;
+  padding: 120px;
 }
 
-.wrapper__title{
+.wrapper__title {
   font-family: 'Playfair Display', serif;
   text-transform: capitalize;
   font-size: 42px;
   line-height: 2;
 }
 
-.wrapper__container--text {
+.wrapper__container--main {
   font-size: 18px;
   margin-bottom: 40px;
   line-height: 1.8;
@@ -33,17 +33,18 @@ body {
 .paragraph-start:first-letter {
   color:#171717;
   font-family: 'Playfair Display', serif;
-  font-size:110px;
-  float:left;
+  font-size: 110px;
+  float: left;
   line-height: 0.8;
   margin-right: 20px;
 }
-.paragraph{
+
+.paragraph {
   padding-bottom: 20px;
 }
 
 .text__quote {
-  font-size:24px;
+  font-size: 24px;
   font-style: italic;
   line-height: 2;
   quotes: "\201C" "";
@@ -70,5 +71,5 @@ blockquote:before {
 
 .main__btn:hover {
   background: #f3f189;
-  cursor:pointer;
+  cursor: pointer;
 }
