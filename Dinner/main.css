@@ -37,10 +37,10 @@ header {
 }
 
 .container {
-   background-color: #88839e;
-	 padding: 20px;
-	 font-size: 20px;
-   border: 2px solid transparent;
+  background-color: #88839e;
+	padding: 20px;
+	font-size: 20px;
+  border: 2px solid transparent;
 }
 
 .container:nth-of-type(2n) {
