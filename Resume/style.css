@@ -1,51 +1,60 @@
-// @TODO: отступы
 * {
 	padding: 0;
-    margin: 0;
+  margin: 0;
+}
 
-}
 body {
-background-color: #f7ce83;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f7ce83;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h1 {
-   padding: 20px;
-   margin-top: 20px;
-   text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
+
 h2 {
-    margin-top:20px;
-    text-align: center;
+  margin-top:20px;
+  text-align: center;
 }
+
 .photo {
-    text-align: center;
+  text-align: center;
 }
+
 .about {
-    margin-left: 42%;
-    margin-top:20px;
+  margin-left: 42%;
+  margin-top:20px;
 }
+
 .information {
 margin-left:31%;
 margin-top: 20px;
 }
+
 .lang {
-    margin-left:31%;
-    margin-top: 20px;
+  margin-left:31%;
+  margin-top: 20px;
 }
+
 .edu {
-    margin-left:30%;
-    margin-top: 20px;
+  margin-left:30%;
+  margin-top: 20px;
 }
-.edu2{
-    margin-left:30%;
-    margin-top: 20px;
+
+.edu2 {
+  margin-left:30%;
+  margin-top: 20px;
 }
+
 .work {
-    margin-left:30%;
-    margin-top: 20px;
+  margin-left:30%;
+  margin-top: 20px;
 }
-.interests{
-    margin-left:30%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+
+.interests {
+  margin-left:30%;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
