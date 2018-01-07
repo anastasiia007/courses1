@@ -7,6 +7,7 @@
   outline: none;
 	 transition: all .1s ease-in;
 }
+
 body {
 	background-color: #f1f1f1;
   font-family: Arial, sans-sefif;   
@@ -28,6 +29,7 @@ body {
   .input {
     display: block;
     width: 100%;
+    // @TODO: у тебя и высота и размер шрифта одинаковые. из-за этого шрифт обрезается, надо либо не указыать явно высоту или двать line-height
     height: 90px;
     padding: 0 20px;
     font-size: 90px;

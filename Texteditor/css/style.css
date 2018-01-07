@@ -2,9 +2,7 @@ body {
     background-color: #464f54;
     font-family: 'Playfair Display', serif;
     position: relative;
-    
 }
-/*BLACK BLOCK*/
 
 .title-input {
     position: absolute;
@@ -106,6 +104,7 @@ body {
     font-size: 26px;
     line-height: 1.5;
     text-align: justify;
+    // @TODO: не использовать отрицательные отступы
     margin-right: -70px;
     padding-bottom: 20px;
 }

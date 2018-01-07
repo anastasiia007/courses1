@@ -1,9 +1,11 @@
-*
- {
+* {
 	box-sizing: border-box;
+    // @TODO: транзишн всем не надо давать, только кнопкам, инпутам, ссылкам
     transition: all .1s ease-in-out;
 
 }
+
+// @TODO: отступы
 body{
     background-color: #3b3f45;
     border: #ffffff;
@@ -19,7 +21,7 @@ header{
    padding: 15px;
    font-size: 18px;
    color: #eb7e7f;
-   line-height:1px; /*межстрочный интервал*/
+   line-height: 1px;
 }
 .title {
 font-size: 30px;
@@ -43,6 +45,7 @@ font-weight:bold;
     background-color:#7a7593;
 }
 .container:hover {
+    // @TODO: у тебя у контейнера когда нет ховера нет бордера, поэтому когда ты наожишь мыщку у тебя идеть "скачек" блока +6 пикселей и так каждый раз когда ты наводишь на какой-нибудь блок, для того чтобы этого не было тебе надо добавить прозрачный бордер изначально и лишь по ховеру менять его цвет
 	border-top: 3px solid #dedede;
 	border-bottom: 3px solid #dedede;
 	background-color: #625e77;

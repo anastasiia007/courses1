@@ -238,7 +238,8 @@ line-height: 32px;
 color:#ffffff;
 padding-bottom:10px;
 }
-.about__subtitle{
+
+.about__subtitle {
   font-size: 22px;
   color: #ffffff;
   font-weight: 400;
@@ -260,7 +261,8 @@ padding-bottom:10px;
   color:#3c4955;
   font-size:14px;
   font-weight: bold;
-}
+
+.about__about--btn:hover {
 .about__about--btn:hover{
   background-color:#3c4955;
   color:#ffffff;
@@ -398,6 +400,8 @@ margin: 30px;
   z-index: 5;
   color: #fff;
 }
+
+// @TODO: идет сумсшедшее дублирование стилей по шестиугольнику. тебе надо было вынеси стили для шестиугольника в один класс, и отдельно определить классы для цветов, потом просто соединением этих коассов у конкретного элемента можно было бы добиться такого же эффекта и кода было в разы меньше. А теперь же если надо поменять размеры шестиугольниа тебе надо будет изменять это во всех местах где у тебя дублируются эти стили
 .twitter:before {
   position: absolute;
   content: "";
