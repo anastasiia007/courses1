@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color:  #4a4f56;
+  background-color: #4a4f56;
   text-align: center;
   padding: 15px;
   font-size: 18px;
@@ -23,7 +23,7 @@ header {
 
 .title {
   font-size: 30px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .content {
@@ -38,17 +38,17 @@ header {
 
 .container {
   background-color: #88839e;
-	padding: 20px;
-	font-size: 20px;
+  padding: 20px;
+  font-size: 20px;
   border: 2px solid transparent;
 }
 
 .container:nth-of-type(2n) {
-  background-color:#7a7593;
+  background-color: #7a7593;
 }
 
 .container:hover {
-  border-top-color:  #dedede;
+  border-top-color: #dedede;
   border-bottom-color: #dedede;
   background-color: #625e77;
 }
@@ -64,28 +64,28 @@ input[type=checkbox] {
   height: 20px;
   width: 20px;
   vertical-align: middle;
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
-input:checked ~ span {
+input:checked~span {
   text-decoration: line-through;
-  color:#a6acc0;
+  color: #a6acc0;
 }
 
 .button {
   cursor: pointer;
-  background-color:#4a4f56;
-  color:#eb7e7f;
-  border:none;
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  border: none;
   font-size: 25px;
-  padding:15px;
+  padding: 15px;
   margin-top: 30px;
   width: 100%;
 }
 
 .button:active {
-  border:none;
+  border: none;
   background-color: #4a4f56;
-  color: rgb(145, 61, 194); 
+  color: rgb(145, 61, 194);
   outline: none;
 }
