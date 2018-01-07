@@ -65,6 +65,7 @@ body {
   padding: 0 50px;
   position: relative;
 }
+
 .nav__link--active,
 .nav__link:hover {
   color: #48bf72;
@@ -217,14 +218,16 @@ body {
 }
 
 /* ABOUT */
-.about{
+.about {
   background: url('../img/men-computer.png') center no-repeat;
   overflow: hidden;
 }
-.about__content{
+
+.about__content {
   min-height: 500px;
 }
-.about__content--info{
+
+.about__content--info {
   left: 50%;
   width: 50%;
   height: 100%;
@@ -232,6 +235,7 @@ body {
   padding: 80px 15px 0 15px;
   color:#ffffff;
 }
+
 .about__title {
   font-size:30px;
   line-height: 32px;
@@ -302,12 +306,12 @@ body {
   position: relative;
 }
 
-.form__field--input:nth-of-type(1){
+.form__field--input:nth-of-type(1) {
   width: 335px;
   float: left;
 }
 
-.form__field--input:nth-of-type(2){
+.form__field--input:nth-of-type(2) {
   width: 335px;
   float: right;
 }
