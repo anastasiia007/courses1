@@ -1,0 +1,100 @@
+.header {
+  background: url('./../img/bg-2.png') center no-repeat;
+  height: 850px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.header__logo {
+  width: 120px;
+  height: 120px;
+  margin-top: 80px;
+}
+
+.header__title {
+  font-family: 'Segoe UI Bold';
+  font-size: 80px;
+  text-transform: uppercase;
+  margin: 150px 0 50px 0;
+}
+
+.header__subtitle {
+  font-family: 'Segoe UI Regular';
+  font-size: 18px;
+}
+
+.main__button--btn {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 190px;
+}
+
+.main__button--btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.about {
+  background: url('./../img/bg-1.png') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.about__content {
+  font-family: 'Segoe UI Regular';
+  font-size: 30px;
+  color: #464b4f;
+  line-height: 1.2;
+  margin-top: 100px;
+}
+
+.about__content--info {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: 'Segoe UI Bold';
+  font-size: 80px;
+  color: #464b4f;
+  text-transform: uppercase;
+  margin: 100px 0 80px 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  text-transform: uppercase;
+  font-family: 'Segoe UI Bold';
+  font-size: 18px;
+  color: #464b4f;
+  line-height: 2;
+}
+
+.list__to-do {
+  font-family: 'Segoe UI Regular';
+  font-size: 18px;
+  color: #888a8b;
+  text-align: justify;
+  width: 300px;
+  height: 110px;
+  margin-top: 50px;
+  line-height: 1.5;
+}
