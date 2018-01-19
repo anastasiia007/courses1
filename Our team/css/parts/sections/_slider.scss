@@ -1,0 +1,182 @@
+.slider {
+  &__wrapper {
+    position: relative;
+  }
+  &__slides-wrapper {
+    padding: 0 50px 50px;
+  }
+}
+
+.slide {
+  display: flex;
+  &__photo {
+    width: 50%;
+    padding: 90px 100px 90px 0;
+    margin-bottom: 20px;
+    border-right: 1px solid $yellow;
+  }
+  &__photo-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    img {
+      border: 1px solid $yellow;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__photo-decoration {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    border: 1px solid $yellow;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      z-index: 1;
+    }
+    &:before {
+      top: -1px;
+      left: 50%;
+      width: calc(100% - 200px);
+      height: calc(100% + 2px);
+      transform: translateX(-50%);
+    }
+    &:after {
+      left: -1px;
+      top: 50%;
+      height: calc(100% - 200px);
+      width: calc(100% + 2px);
+      transform: translateY(-50%);
+    }
+  }
+  &__info {
+    width: 50%;
+    padding: 90px 0 90px 85px;
+    text-align: center;
+  }
+  &__title {
+    font: 900 36px 'Roboto', sans-serif;
+    color: $gray;
+    letter-spacing: 0.02em;
+    margin-bottom: 70px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 1px;
+      background-color: $yellow;
+    }
+  }
+  &__position {
+    font: 400 24px 'Raleway', sans-serif;
+    margin-bottom: 30px;
+    color: $gray;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $lightGray;
+      color: $lightGray;
+      font-size: 16px;
+      margin: 0 4px;
+      &:hover {
+        color: $gray;
+        border-color: $gray;
+        @include transition();
+      }
+    }
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+    font: 500 14px/24px 'Raleway', sans-serif;
+    color: $darkGray;
+    margin-bottom: 24px;
+  }
+  &__decors {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    span {
+      width: 10px;
+      height: 4px;
+      background-color: $yellow;
+      margin: 0 3px;
+      &:nth-of-type(2) {
+        width: 20px;
+      }
+    }
+  }
+  &__btn {
+    @include size(121px, 25px);
+    @include button($gray, $white);
+    @include transition();
+    border: 1px solid $yellow;
+    font: 700 14px/24px 'Open Sans', sans-serif;
+  }
+}
+
+.controls {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  &__btn {
+    border: none;
+    font-size: 30px;
+    color: $yellow;
+    background-color: $white;
+    &:hover{
+      color: $darkGray;
+      @include transition();
+    }
+  }
+}
+
+.pagination {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  &__btn {
+    width: 12px;
+    height: 12px;
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    border-radius: 50%;
+    margin: 0 3px;
+    &--active {
+      background-color: $white;
+    }
+  }
+}
