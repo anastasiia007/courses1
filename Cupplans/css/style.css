@@ -1,0 +1,59 @@
+.cups__wrapper {
+  background-color: #fdde7e;
+  max-width: 1250px;
+  height: 650px;
+  margin: 120px auto;
+}
+
+.cups {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.item__cup {
+  width: 360px;
+  height: 445px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+  border-radius: 5px;
+}
+
+.bronze,
+.silver {
+  margin: 50px 0;
+}
+
+.gold {
+  height: 500px;
+  margin: 20px 0;
+}
+
+.cup-middle {
+  margin-top: 20px;
+}
+
+.item__price {
+  font-family: 'Miso Bold';
+  font-size: 70px;
+  color: #02995b;
+}
+
+.item__title {
+  font-family: 'Miso Light';
+  font-size: 56px;
+  color: #333;
+}
+
+.item__subtitle {
+  width: 155px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #333;
+}

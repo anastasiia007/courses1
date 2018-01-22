@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+@font-face {
+  font-family: 'Miso Bold';
+  src: url('./../fonts/miso-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miso Light';
+  src: url('./../fonts/miso-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
