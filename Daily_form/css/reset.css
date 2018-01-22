@@ -21,3 +21,7 @@ button {
 input {
   outline: none;
 }
+
+input:focus {
+  border: 1px solid #df2671;
+}
