@@ -1,0 +1,118 @@
+body {
+  background: url('../img/main_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  font-family: 'Museo Sans Rounded-100';
+  background-color: #111a28;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  margin: 110px auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .7);
+}
+
+.slider__logo {
+  padding: 25px;
+  color: #fff;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__container {
+  max-width: 290px;
+  padding-left: 50px;
+}
+
+.product__photo {
+  padding: 40px;
+}
+
+.product__title {
+  font-size: 24px;
+  color: #e1e1e1;
+}
+
+.product__subtitle {
+font-size: 16px;
+line-height: 2;
+color: #656a73;
+}
+
+.product__rate {
+  margin: 20px 0;
+}
+
+.fa-star {
+  color: #9da1a6;
+}
+
+.fa-star:hover:before {
+  color: #f7bf16;
+  cursor: pointer;
+}
+
+.select__btn {
+  background: transparent;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #4f5560;
+  font-size: 14px;
+  color: #868a90;
+}
+
+.select__btn:hover {
+  color: #ffee00;
+  border-color: #ffee00;
+}
+
+.add {
+  margin-top: 30px;
+  width: 180px;
+  height: 40px;
+  background-color: #202835;
+  color: #868a90;
+  border: 1px solid #4f5560;
+  font-size: 14px;
+}
+
+.add:hover {
+  color: #ffee00;
+  border-color: #ffee00;
+}
+
+.slider__buttons {
+  margin: 20px 0px 20px 170px;
+}
+
+.slider__btn {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.slider__btn:hover {
+  border: 2px solid #6a6f7a;
+  width: 20px;
+  height: 20px;
+}
+
+.darkblue {
+  background-color: #1f273f;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.red {
+  background-color: #ed3333;
+}
+
+.blue {
+  background-color: #29e3ea;
+}
