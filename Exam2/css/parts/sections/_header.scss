@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  height: 100px;
+  background: transparent;
+  width: 100%;
+  color: $white;
+  &--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  &__logo {
+    cursor: pointer;
+  }
+  &__nav-btn {
+    border: none;
+    border-radius: 3px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background-color: transparent;
+    &:hover span {
+      background-color: $green;
+    }
+    span {
+      width: 30px;
+      height: 4px;
+      background-color: $white;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+    &.is-active span:first-of-type {
+      transform: rotate(45deg) translateY(10px) translateX(4px);
+    }
+    &.is-active span:nth-of-type(2) {
+      opacity: 0;
+      transform: scale(0);
+    }
+    &.is-active span:last-of-type {
+      transform: rotate(-45deg) translateY(-10px) translateX(2px);
+    }
+  }
+  &__nav a {
+    margin-left: 5px;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: $white;
+    font-size: 16px;
+    &:hover {
+      border-color: $white;
+    }
+  }
+  &__nav a.active {
+    border-color: $green;
+    color: $green;
+  }
+  &__nav.header__nav--show {
+    display: block;
+    width: 100%;
+  }
+  &__nav.header__nav--show a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+
+.content {
+  background: url("./../img/background.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  text-align: center;
+  min-height: 660px;
+  padding-top: 220px;
+  padding-bottom: 76px;
+  &__title {
+    font-size: 35px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  &__description {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    line-height: 2;
+    padding-bottom: 200px;
+  }
+  &__btn-next {
+    border: 1px solid $white;
+    width: 45px;
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    color: $white;
+    margin-top: 220px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-top: 1px solid $white;
+      border-left: 1px solid $white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%) rotate(-135deg);
+    }
+    &:hover {
+      background-color: $green;
+    }
+  }
+}

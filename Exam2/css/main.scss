@@ -1,0 +1,19 @@
+//RESET
+@import "./parts/base/_reset.scss";
+
+// FONTS
+
+//BASE (variables, mixins, colors, helpers, base)
+@import "./parts/base/_colors.scss";
+@import "./parts/base/_mixin.scss";
+@import "./parts/base/_base.scss";
+@import "./parts/base/_slick.scss";
+
+//SECTIONS
+@import "./parts/sections/_header.scss";
+@import "./parts/sections/_portfolio.scss";
+@import "./parts/sections/_team.scss";
+@import "./parts/sections/_talk.scss";
+@import "./parts/sections/_testimonials.scss";
+@import "./parts/sections/_contact-us.scss";
+@import "./parts/sections/_media.scss";

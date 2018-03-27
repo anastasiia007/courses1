@@ -1,0 +1,44 @@
+@media (max-width: 620px) {
+  .header {
+    min-height: 70px;
+    height: auto;
+    padding: 20px 15px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__nav-btn {
+    display: flex;
+    margin: 0 auto;
+  }
+  .header__wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .header__nav.header__nav--show {
+    margin-top: 5px;
+  }
+  .header__nav.header__nav--show a {
+    margin-top: 5px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .team__item-wrapper {
+    padding: 0 10px;
+  }
+  .testimonials__item-wrapper {
+    padding: 10px 15px;
+  }
+
+  .slick-dots {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .grid {
+    padding: 5px;
+  }
+}
