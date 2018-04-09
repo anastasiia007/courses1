@@ -1,0 +1,111 @@
+.reviews {
+  background: url("./../img/bg-next.png") center no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 480px;
+  position: relative;
+  // background-attachment: fixed;
+
+  //   //slider
+  //   &__slider-item {
+  //     position: relative;
+  //     margin: 0 auto;
+  //     display: flex;
+  //     justify-content: center;
+  //     width: 100%;
+  //     height: 260px;
+  //     color: $violet;
+  //     //padding-top: 60px;
+  //     //padding-left: 110px;
+  //   }
+  //   &__item-wrapper {
+  //     margin: 0 auto;
+  //     width: 90%;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     flex-wrap: nowrap;
+  //     position: absolute;
+  //     max-height: 370px;
+  //     left: 50%;
+  //     bottom: 30px;
+  //     top: 115%;
+  //   }
+
+  //   &__text-container {
+  //     max-width: 860px;
+  //     height: 150px;
+  //     font-weight: 300;
+  //   }
+
+  //   &__item-title {
+  //     font-size: 16px;
+  //     font-family: "Lato HairlineItalic", sans-serif;
+  //     font-style: italic;
+  //     text-align: center;
+  //   }
+
+  //   &__item-description {
+  //     margin: 0 auto;
+  //     text-align: center;
+  //     color: $violet;
+  //     line-height: 1.75;
+  //   }
+
+  //   &__img-container {
+  //     margin: 0 auto;
+  //     width: 114px;
+  //     height: 114px;
+  //   }
+  //   &__img {
+  //     width: 100%;
+  //     height: 100%;
+  //     border-radius: 50%;
+  //     object-fit: cover;
+  //     border: 3px solid $violet;
+  //   }
+
+  &__slider-btn {
+    position: absolute;
+    color: transparent;
+    font-size: 280px;
+    width: 420px;
+    border: none;
+    outline: none;
+    display: none;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: $violet;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 1px solid $violet;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  display: block;
+  border: none;
+  font-size: 0;
+}
+
+.slick-dots li:last-of-type {
+  margin-right: 0;
+}
+
+.slick-dots li.slick-active {
+  background-color: $white;
+}

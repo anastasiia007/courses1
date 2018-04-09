@@ -1,0 +1,65 @@
+.app {
+  height: 890px;
+  width: 100%;
+  background-color: $white2;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__app--info {
+    width: 46%;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 0.5;
+    font-weight: bold;
+    padding-top: 200px;
+    padding-bottom: 15px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 90px;
+      height: 1px;
+      background-color: $tomato;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__description {
+    padding-top: 20px;
+    color: $darkGray;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  &__text-1 {
+    padding-bottom: 20px;
+  }
+  &__text-2 {
+    padding-bottom: 20px;
+  }
+  &__text-3 {
+    padding-bottom: 20px;
+  }
+  &__buttons {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 120px;
+  }
+  &__img {
+    padding-top: 155px;
+    width: 520px;
+    // height: 780px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
