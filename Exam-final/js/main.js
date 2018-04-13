@@ -16,7 +16,12 @@ $(document).ready(function() {
     let scrollTop = isHeaderSticky
       ? top - headerHeight
       : top - headerHeight + 40;
-    $("body, html").animate({ scrollTop }, 700);
+    $("body, html").animate(
+      {
+        scrollTop
+      },
+      700
+    );
   });
 
   // sticky header
@@ -44,7 +49,7 @@ $(document).ready(function() {
       let currLink = $(this);
       let refElement = $(currLink.attr("href"));
       if (
-        refElement.position().top - 40 <= scrollPos &&
+        refElement.position().top - 75 <= scrollPos &&
         refElement.position().top + refElement.height() + 170 > scrollPos
       ) {
         $(".header__nav a").removeClass("active");
@@ -99,7 +104,7 @@ $(document).ready(function() {
     transitionDuration: "1.0s"
   });
 
-  // slick-slider
+  //slick-slider
   $("#reviews__slider").slick({
     dots: true,
     infinite: true,

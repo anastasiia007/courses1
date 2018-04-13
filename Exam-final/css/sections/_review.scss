@@ -1,69 +1,61 @@
 .reviews {
   background: url("./../img/bg-next.png") center no-repeat;
   background-size: cover;
-  backface-visibility: hidden;
   width: 100%;
-  height: 480px;
+  height: 500px;
   position: relative;
-  // background-attachment: fixed;
+  &__slider-item {
+    outline: none;
+  }
+  //slider
+  &__item-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 330px;
+    color: $violet;
+    padding-top: 85px;
+  }
 
-  //   //slider
-  //   &__slider-item {
-  //     position: relative;
-  //     margin: 0 auto;
-  //     display: flex;
-  //     justify-content: center;
-  //     width: 100%;
-  //     height: 260px;
-  //     color: $violet;
-  //     //padding-top: 60px;
-  //     //padding-left: 110px;
-  //   }
-  //   &__item-wrapper {
-  //     margin: 0 auto;
-  //     width: 90%;
-  //     display: flex;
-  //     justify-content: space-between;
-  //     flex-wrap: nowrap;
-  //     position: absolute;
-  //     max-height: 370px;
-  //     left: 50%;
-  //     bottom: 30px;
-  //     top: 115%;
-  //   }
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 114px;
+    height: 114px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid $violet;
+  }
 
-  //   &__text-container {
-  //     max-width: 860px;
-  //     height: 150px;
-  //     font-weight: 300;
-  //   }
+  &__text-container {
+    margin: 0 auto;
+    width: 70%;
+    height: 125px;
+    text-align: center;
+    color: $violet;
+  }
 
-  //   &__item-title {
-  //     font-size: 16px;
-  //     font-family: "Lato HairlineItalic", sans-serif;
-  //     font-style: italic;
-  //     text-align: center;
-  //   }
+  &__item-title {
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: "Lato-HairlineItalic", sans-serif;
+    font-style: italic;
+  }
 
-  //   &__item-description {
-  //     margin: 0 auto;
-  //     text-align: center;
-  //     color: $violet;
-  //     line-height: 1.75;
-  //   }
-
-  //   &__img-container {
-  //     margin: 0 auto;
-  //     width: 114px;
-  //     height: 114px;
-  //   }
-  //   &__img {
-  //     width: 100%;
-  //     height: 100%;
-  //     border-radius: 50%;
-  //     object-fit: cover;
-  //     border: 3px solid $violet;
-  //   }
+  &__item-decsription {
+    font-size: 30px;
+    line-height: 1.75;
+    font-weight: 300;
+  }
 
   &__slider-btn {
     position: absolute;
@@ -79,7 +71,7 @@
 .slick-dots {
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: -45px;
   transform: translateX(-50%);
   display: flex;
   align-items: center;

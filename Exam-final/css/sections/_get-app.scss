@@ -54,12 +54,14 @@
     margin-right: 120px;
   }
   &__img {
-    padding-top: 155px;
+    padding-top: 180px;
+    max-width: 100%;
     width: 520px;
-    // height: 780px;
+    min-height: 770px;
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

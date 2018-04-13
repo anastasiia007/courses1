@@ -30,6 +30,7 @@
     .item__overlay {
       z-index: 1;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
@@ -56,7 +57,7 @@
     text-align: center;
   }
   &__title {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
   }
@@ -78,6 +79,6 @@
     object-fit: cover;
   }
   &:hover {
-    z-index: 1;
+    transition: all 0.3s ease-in-out;
   }
 }
