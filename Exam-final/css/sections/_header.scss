@@ -1,7 +1,6 @@
 .header {
   position: fixed;
-  height: 100px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   color: $white;
   &--sticky {
@@ -9,7 +8,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
     background-color: rgb(255, 131, 141);
     box-shadow: 0 10px 6px -6px #777;
     z-index: 100;
@@ -17,14 +15,15 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    height: 100%;
     width: 100%;
     align-items: center;
   }
   &__logo {
     cursor: pointer;
-    height: auto;
-    width: auto;
+    width: 90px;
+  }
+  &__nav-wrapper {
+    padding: 10px;
   }
   &__nav-btn {
     border: none;
@@ -36,11 +35,11 @@
     height: 22px;
     background-color: transparent;
     &:hover span {
-      background-color: $darkGray;
+      background-color: $white;
     }
     span {
       width: 30px;
-      height: 4px;
+      height: 2px;
       background-color: $white;
       border-radius: 2px;
       transition: all 0.3s ease-in-out;

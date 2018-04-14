@@ -13,9 +13,7 @@ $(document).ready(function() {
     let top = $(id).offset().top;
     let headerHeight = $(".header").height();
     let isHeaderSticky = $(".header").hasClass("header--sticky");
-    let scrollTop = isHeaderSticky
-      ? top - headerHeight
-      : top - headerHeight + 40;
+    let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight;
     $("body, html").animate(
       {
         scrollTop
