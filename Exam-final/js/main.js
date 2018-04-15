@@ -7,13 +7,15 @@ $(document).ready(function() {
   });
 
   // Slow scroll from nav item to current section
-  $(".header__nav a, .content__btn-next").click(function(event) {
+  $(".header__nav a").click(function(event) {
     event.preventDefault();
     let id = $(this).attr("href");
     let top = $(id).offset().top;
     let headerHeight = $(".header").height();
     let isHeaderSticky = $(".header").hasClass("header--sticky");
-    let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight;
+    let scrollTop = isHeaderSticky
+      ? top - headerHeight
+      : top - headerHeight + 40;
     $("body, html").animate(
       {
         scrollTop
@@ -47,8 +49,8 @@ $(document).ready(function() {
       let currLink = $(this);
       let refElement = $(currLink.attr("href"));
       if (
-        refElement.position().top - 75 <= scrollPos &&
-        refElement.position().top + refElement.height() + 170 > scrollPos
+        refElement.position().top - 80 <= scrollPos &&
+        refElement.position().top + refElement.height() + 180 > scrollPos
       ) {
         $(".header__nav a").removeClass("active");
         currLink.addClass("active");

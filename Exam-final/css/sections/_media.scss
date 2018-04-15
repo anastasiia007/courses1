@@ -17,12 +17,17 @@
 }
 
 @media (max-width: 730px) {
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .header__nav-wrapper {
+    width: 100%;
+  }
   .header__nav {
     display: none;
   }
   .header__nav-btn {
     display: flex;
-    margin: 0 auto;
   }
 
   .header__nav.header__nav--show {
