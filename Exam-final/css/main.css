@@ -72,15 +72,13 @@ body {
 }
 
 .button-up {
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
+  border-radius: 50%;
   color: #f64a37;
-  border: 1px solid #f64a37;
+  border: transparent;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 16px;
+  font-size: 45px;
   opacity: 0;
   pointer-events: none;
   cursor: pointer;
@@ -95,9 +93,7 @@ body {
 }
 
 .button-up:hover {
-  background-color: #f64a37;
-  border-color: #f64a37;
-  color: #fff;
+  color: #fd3f7f;
 }
 
 /* Slider */
@@ -379,6 +375,10 @@ body {
 .content__btn-next:hover {
   background-color: #f64a37;
   border: transparent;
+}
+
+.content__btn-next:active {
+  color: #424242;
 }
 
 .content__text {
@@ -748,7 +748,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 99%;
+  height: 98%;
   z-index: -1;
   background: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
@@ -791,7 +791,7 @@ body {
 .grid-item {
   /*Masonry bricks or child elements*/
   display: inline-block;
-  width: calc(100% / 5);
+  width: 20%;
   min-width: 200px;
 }
 

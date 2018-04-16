@@ -122,6 +122,9 @@
       background-color: $tomato;
       border: transparent;
     }
+    &:active {
+      color: $darkGray;
+    }
   }
   &__text {
     padding-top: 38px;

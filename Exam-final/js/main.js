@@ -101,7 +101,7 @@ $(document).ready(function() {
     // do not use .grid-sizer in layout
     percentPosition: true,
     horizontalOrder: true,
-    transitionDuration: "1.0s"
+    transitionDuration: "0.7s"
   });
 
   //slick-slider
