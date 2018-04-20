@@ -68,10 +68,14 @@
 .grid {
   /*Masonry container*/
   column-count: 5;
+  // display: flex;
+  // flex-direction: row;
 }
 
 .grid-item {
   /*Masonry bricks or child elements*/
+  // display: flex;
+  // flex-direction: column;
   display: inline-block;
   width: 20%;
   min-width: 200px;
