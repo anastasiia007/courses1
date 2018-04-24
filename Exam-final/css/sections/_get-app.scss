@@ -10,7 +10,6 @@
     width: calc(1150px / 2);
     padding: 0 15px;
   }
-
   &__app--img {
     width: calc(1150px / 2);
   }
@@ -55,7 +54,8 @@
   &__phone {
     max-width: 520px;
     height: auto;
-  }
-  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
